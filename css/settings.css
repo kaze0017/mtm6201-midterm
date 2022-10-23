@@ -1,0 +1,46 @@
+/* colors: #c78c06, #ffe6ac, #222, and white */
+/* font family: 'Open Sans' Google font for the webpage*/
+/******************default settings***********************/
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* makes Open Sans from google fonts the default (elements don't inherit html default font)*/
+html, input, textarea, button{
+    color: #222222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;}
+h1 {
+    font-size: 4.5rem;
+    line-height: 6rem;
+    font-weight: 700;}
+h2{
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 700;}
+h3{ margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;}
+h4{
+    font-size: 1.1rem;
+    font-weight: 700;}
+p{
+    margin-top: 0.8rem;
+    font-size:1rem;
+    line-height: 1.5rem;
+    font-weight: 400;}
+a{font-weight: 500;}
+i{font-size: 2rem;}
+label{
+    color:#222222;
+    line-height:2;}
+input{
+    color: #222222;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+img{width: 100%}
