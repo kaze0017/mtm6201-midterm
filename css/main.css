@@ -1,1 +1,24 @@
-
+body{background-color: var(--main-bg-color);}
+/*wrapper: frames it contents in 1200px window and adds margin*/
+img{
+    color: var(--main-gold);
+}
+.menu{
+    background-color: var(--main-dark);
+    height:60px ;
+    flex-direction: row;
+}
+.logo{
+    height: 150px;
+    width: 100px;
+}
+#menu-list{flex-direction: row;}
+.about-brief{
+    text-align: center;
+    justify-content: center;
+}
+.about-brief p{
+    flex-grow: 1;
+}
+.service-contents{background-color: var(--main-ivory);}
+.service-actions{flex-direction: row;justify-content: left;}

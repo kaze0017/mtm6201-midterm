@@ -1,6 +1,11 @@
-/* colors: #c78c06, #ffe6ac, #222, and white */
-/* font family: 'Open Sans' Google font for the webpage*/
 /******************default settings***********************/
+:root{
+    --main-bg-color:#DCE3E9;
+    --main-gold:#F9E588;
+    --main-ivory:#F5F1EE;
+    --main-dark:#707070;
+    --main-brown:#D4BB84;
+}
 *,
 *:after,
 *:before{
@@ -12,7 +17,7 @@
 html, input, textarea, button{
     color: #222222;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;}
+    font-size: 16px;}
 h1 {
     font-size: 4.5rem;
     line-height: 6rem;
@@ -43,4 +48,18 @@ input{
     font-size: 1.2rem;
     line-height: 2rem;
 }
-img{width: 100%}
+img,input,textarea{width: 100%}
+.wrapper{
+    margin: 0px auto;
+    max-width: 1200px;
+}
+/*container: adjusts its contents on "y" axis with propper padding and space in between by default - changes to "x" axis when mneeded */
+.container{
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+}
