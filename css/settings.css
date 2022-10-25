@@ -5,6 +5,7 @@
     --main-ivory:#F5F1EE;
     --main-dark:#707070;
     --main-brown:#D4BB84;
+    --main-extreme-dark:#203030;
 }
 *,
 *:after,
@@ -59,7 +60,7 @@ img,input,textarea{width: 100%}
     gap: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 }

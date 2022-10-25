@@ -1,18 +1,28 @@
 body{background-color: var(--main-bg-color);}
 /*wrapper: frames it contents in 1200px window and adds margin*/
-img{
-    color: var(--main-gold);
-}
 .menu{
-    background-color: var(--main-dark);
-    height:60px ;
-    flex-direction: row;
+    color: var(--main-gold);
+    background-color: var(--main-extreme-dark);
 }
-.logo{
-    height: 150px;
-    width: 100px;
+.menu .logo{
+    height: 5rem;
 }
-#menu-list{flex-direction: row;}
+.logo img{
+    height: 100%;
+}
+#menu-list{
+    font-size: 1.2rem;
+    text-decoration: underline solid;
+}
+#menu-list li a{
+    color: var(--main-gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    line-height: 100%;
+    height: 100%;
+}
 .about-brief{
     text-align: center;
     justify-content: center;
@@ -20,5 +30,73 @@ img{
 .about-brief p{
     flex-grow: 1;
 }
-.service-contents{background-color: var(--main-ivory);}
+.about-brief button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;}
+.services{align-items: center;}
+.service{height: 50rem;}
+.service-contents{background-color: var(--main-ivory);max-width: 350px;}
+.service-pic img{border-radius: 15%; height: 30rem;width: 20rem;}
+.service-text{flex-grow: 1;}
 .service-actions{flex-direction: row;justify-content: left;}
+.service a{text-decoration: underline solid;}
+.service-action-button{height:50px;width:50px;color: #fff; background-color: var(--main-extreme-dark);border-radius: 50%;}
+.contacts-title, .address{width: 100%;}
+.contacts > div {background-color: var(--main-ivory);}
+.contacts .location .map{border: 2px solid var(--main-extreme-dark); flex-grow: 1;}
+.map iframe{height: 100%;}
+.contacts button{border-radius: 50px; width: 4rem; background-color:var(--main-extreme-dark) ; color: #fff;}
+.contacts .postal-address span{width:100%;display: block;}
+.contacts .message-form {width: 100%;}
+.schedule th{font-weight: bold;}
+.schedule table, .schedule th, .schedule td {border-collapse: collapse; text-align: center;}
+.schedule tr{line-height: 3rem;}
+.schedule tbody th{text-indent: 10px;}
+footer{background-color: var(--main-extreme-dark); color: var(--main-gold);}
+
+footer p{display: block;}
+@media screen and (min-width: 650px){
+    .menu, #menu-list{flex-direction: row; }
+    #menu-list,  #menu-list{ height: 5rem;}
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        " h2 h2 "
+        " s1 s2 "
+        " s3 s4 ";
+    }
+    .services .services-header{grid-area: h2;}
+    .address{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "adr map"
+        "sch map";
+    }
+    .contacts .address .postal-address{grid-area: adr; }
+    .contacts .address .location{grid-area: map; height: 100%;}
+    .contacts .address .schedule{grid-area: sch;}
+    .footer-inf{ flex-direction: row-reverse; width:100%}
+}
+@media screen and (min-width: 960px){
+    .menu, #menu-list{flex-direction: row; }
+    #menu-list,  #menu-list{ height: 5rem;}
+    .services{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        " h2 h2 h2 h2 "
+        " s1 s2 s3 s4"
+    }
+    .services .services-header{grid-area: h2;}
+    .address{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "adr map"
+        "sch map";
+    }
+    .contacts .address .postal-address{grid-area: adr; }
+    .contacts .address .location{grid-area: map; height: 100%;}
+    .contacts .address .schedule{grid-area: sch;}
+    .footer-inf{ flex-direction: row-reverse; width:100%}
+}
