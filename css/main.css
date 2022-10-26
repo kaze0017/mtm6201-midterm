@@ -50,16 +50,7 @@ body{background-color: var(--main-bg-color);}
 .service .service-actions{height: 20%;}
 .service-pic {
     height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     border-radius: 20px;
-}
-.service-pic img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
 }
 .service-actions{flex-direction: row;}
 .service a{text-decoration: underline solid;}
