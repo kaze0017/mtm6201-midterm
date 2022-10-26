@@ -1,0 +1,52 @@
+.co-hero-img{
+    background-image:url('../images/contacts/co-hero.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;}
+    .co-hero-title{background-color: rgba(80,80,80,0.5);color: white;height: 80%;width: 90%;padding: 10px;}
+    .co-hero-title h1{text-align: center;}
+    .co-contacts{
+        padding: 20px 20px;
+        display: grid;
+        grid-auto-rows:1fr;
+        row-gap: 10px;
+        grid-template-areas: 
+        "adr"
+        "loc"
+        "msg"
+        "scm";
+    }
+    .address-schedule{grid-area: adr;}
+    .location{grid-area: loc;}
+    .message-form{grid-area: msg;}
+    .social-media{
+        grid-area: scm;
+        display: grid;
+        grid-template-columns: (2,fr);
+        grid-template-rows: (2,fr);
+        grid-template-areas: 
+        "lin fac"
+        "ins wha";
+    }
+    .social-media{background-color: var(--main-ivory);}
+    .i-link{grid-area: lin;}
+    .i-inst{grid-area: ins;}
+    .i-face{grid-area: fac;}
+    .i-what{grid-area: wha;}
+    .social-media i{font-size: 4rem;}
+    @media screen and (min-width:720px) {
+        .co-contacts{
+            column-gap: 10px;
+            grid-auto-columns:1fr;
+            grid-template-areas: 
+            "adr loc"
+            "msg scm";
+        }
+    }
+    @media screen and (min-width:960px) {
+        .co-contacts{
+            grid-template-areas: 
+            "adr loc msg scm";
+        }
+    }

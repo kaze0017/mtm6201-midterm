@@ -1,0 +1,15 @@
+img{height: 100%;width: 100%;}
+@media screen and (min-width:650px){
+    .sp-services{
+        display: grid;
+        grid-auto-rows: 1fr;
+    }
+    .sp-service{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "im tx tx";
+    }
+    .sp-service-img{grid-area: im; max-height: 460px;border: 1px black solid;}
+    .sp-service-txt{grid-area: tx; justify-content: space-evenly;}
+}

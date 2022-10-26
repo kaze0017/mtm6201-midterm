@@ -1,6 +1,6 @@
 body{background-color: var(--main-bg-color);}
 /*wrapper: frames it contents in 1200px window and adds margin*/
-.menu{
+.main-menu{
     color: var(--main-gold);
     background-color: var(--main-extreme-dark);
 }
@@ -32,24 +32,23 @@ body{background-color: var(--main-bg-color);}
 }
 .about-brief button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;}
 .services{align-items: center;}
-.service{height: 50rem;}
-.service-contents{background-color: var(--main-ivory);max-width: 350px;}
-.service-pic img{border-radius: 15%; height: 30rem;width: 20rem;}
+.service, .service-contents{height: 100%;}
+.service-pic{ height: 60%;width: 100;}
+.service-contents{background-color: var(--main-ivory);}
+.service-pic img{border-radius: 15%; height: 100%;}
 .service-text{flex-grow: 1;}
 .service-actions{flex-direction: row;justify-content: left;}
 .service a{text-decoration: underline solid;}
 .service-action-button{height:50px;width:50px;color: #fff; background-color: var(--main-extreme-dark);border-radius: 50%;}
-.contacts-title, .address{width: 100%;}
-.contacts > div {background-color: var(--main-ivory);}
-.contacts .location .map{border: 2px solid var(--main-extreme-dark); flex-grow: 1;}
-.map iframe{height: 100%;}
-.contacts button{border-radius: 50px; width: 4rem; background-color:var(--main-extreme-dark) ; color: #fff;}
-.contacts .postal-address span{width:100%;display: block;}
-.contacts .message-form {width: 100%;}
+
+.address-schedule, .location, .message-form{background-color: var(--main-ivory); flex:1; align-items: stretch;}
+.map{flex-grow: 1;} iframe{height: 100%;width: 100%;}
+.address-schedule span{display:inline-block;width: 100%;}
 .schedule th{font-weight: bold;}
 .schedule table, .schedule th, .schedule td {border-collapse: collapse; text-align: center;}
 .schedule tr{line-height: 3rem;}
 .schedule tbody th{text-indent: 10px;}
+.message-form button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;}
 footer{background-color: var(--main-extreme-dark); color: var(--main-gold);}
 
 footer p{display: block;}
@@ -65,16 +64,17 @@ footer p{display: block;}
         " s3 s4 ";
     }
     .services .services-header{grid-area: h2;}
-    .address{
+    .contacts-contents{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
         "adr map"
-        "sch map";
+        "msg msg";
     }
-    .contacts .address .postal-address{grid-area: adr; }
-    .contacts .address .location{grid-area: map; height: 100%;}
-    .contacts .address .schedule{grid-area: sch;}
+    .address-schedule{grid-area: adr;}
+    .location{grid-area: map;}
+    .message-form{grid-area: msg;}
+    
     .footer-inf{ flex-direction: row-reverse; width:100%}
 }
 @media screen and (min-width: 960px){
@@ -85,18 +85,11 @@ footer p{display: block;}
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
         " h2 h2 h2 h2 "
-        " s1 s2 s3 s4"
+        " s1 s2 s3 s4";
     }
     .services .services-header{grid-area: h2;}
-    .address{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "adr map"
-        "sch map";
+    .contacts-contents{display:flex;
+        flex-direction: row;
     }
-    .contacts .address .postal-address{grid-area: adr; }
-    .contacts .address .location{grid-area: map; height: 100%;}
-    .contacts .address .schedule{grid-area: sch;}
     .footer-inf{ flex-direction: row-reverse; width:100%}
 }
