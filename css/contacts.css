@@ -12,41 +12,42 @@
         grid-auto-rows:1fr;
         row-gap: 10px;
         grid-template-areas: 
-        "adr"
-        "loc"
-        "msg"
-        "scm";
+        "block1"
+        "block2"
+        "block3"
+        "block4";
     }
-    .address-schedule{grid-area: adr;}
-    .location{grid-area: loc;}
-    .message-form{grid-area: msg;}
+
+    .address-schedule{grid-area: block1; background-color: var(--main-ivory);}
+    .location{grid-area: block2; background-color: var(--main-ivory)}
+    .message-form{grid-area: block3; background-color: var(--main-ivory)}
     .social-media{
-        grid-area: scm;
+        background-color: var(--main-ivory);
+        grid-area: block4;
         display: grid;
         grid-template-columns: (2,fr);
         grid-template-rows: (2,fr);
         grid-template-areas: 
-        "lin fac"
-        "ins wha";
+        "block1 block2"
+        "block3 block4";
     }
-    .social-media{background-color: var(--main-ivory);}
-    .i-link{grid-area: lin;}
-    .i-inst{grid-area: ins;}
-    .i-face{grid-area: fac;}
-    .i-what{grid-area: wha;}
+    .i-link{grid-area: block1;}
+    .i-inst{grid-area: block2;}
+    .i-face{grid-area: block3;}
+    .i-what{grid-area: block4;}
     .social-media i{font-size: 4rem;}
-    @media screen and (min-width:720px) {
+    @media screen and (min-width:620px) {
         .co-contacts{
             column-gap: 10px;
             grid-auto-columns:1fr;
             grid-template-areas: 
-            "adr loc"
-            "msg scm";
+            "block1 block2"
+            "block3 block4";
         }
     }
     @media screen and (min-width:960px) {
         .co-contacts{
             grid-template-areas: 
-            "adr loc msg scm";
+            "block1 block2 block3 block4";
         }
     }

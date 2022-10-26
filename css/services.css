@@ -1,4 +1,4 @@
-@media screen and (min-width:650px){
+@media screen and (min-width:720px){
     .sp-services{
         display: grid;
         grid-auto-rows: 1fr;
@@ -9,6 +9,6 @@
         grid-template-areas: 
         "im tx tx";
     }
-    .sp-service-img{grid-area: im; max-height: 460px;border: 1px black solid;}
+    .sp-service-img{grid-area: im; border: 1px black solid;}
     .sp-service-txt{grid-area: tx; justify-content: space-evenly;}
 }

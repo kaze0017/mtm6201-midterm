@@ -52,9 +52,18 @@ body{background-color: var(--main-bg-color);}
     height: 80%;
     border-radius: 20px;
 }
-.service-actions{flex-direction: row;}
+.service-actions{
+    flex-direction: row;
+    justify-content: space-around;
+}
 .service a{text-decoration: underline solid;}
-.service-action-button{height:50px;width:50px;color: #fff; background-color: var(--main-extreme-dark);border-radius: 50%;}
+.service-action-button{
+    height:50px;
+    width:50px;
+    color: #fff;
+    background-color: var(--main-extreme-dark);
+    border-radius: 50%;
+    }
 
 .contacts-blocks{
     display: grid;
@@ -78,7 +87,7 @@ body{background-color: var(--main-bg-color);}
 .message-form button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;} footer{background-color: var(--main-extreme-dark); color: var(--main-gold);}
 
 footer p{display: block;}
-@media screen and (min-width: 650px){
+@media screen and (min-width: 620px){
     .menu, #menu-list{flex-direction: row; }
     #menu-list,  #menu-list{ height: 5rem;}
     .services-blocks{

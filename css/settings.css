@@ -6,6 +6,9 @@
     --main-dark:#707070;
     --main-brown:#D4BB84;
     --main-extreme-dark:#203030;
+
+    --main-breakpoint-first:620px;
+    --main-breakpoint-second:960px;
 }
 *,
 *:after,
@@ -49,7 +52,7 @@ input{
     font-size: 1.2rem;
     line-height: 2rem;
 }
-img,input,textarea{width: 100%}
+input,textarea{width: 100%}
 .wrapper{
     margin: 0px auto;
     max-width: 1200px;
@@ -71,8 +74,10 @@ img,input,textarea{width: 100%}
     align-items: center;
     overflow: hidden;
 }
+img{width:100%}
 .masked-img {
-    flex-shrink: 0;
+    
+    flex-shrink: 1;
     min-width: 100%;
     min-height: 100%
 }
