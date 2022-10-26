@@ -31,45 +31,78 @@ body{background-color: var(--main-bg-color);}
     flex-grow: 1;
 }
 .about-brief button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;}
-.services{align-items: center;}
-.service, .service-contents{height: 100%;}
-.service-pic{ height: 60%;width: 100;}
-.service-contents{background-color: var(--main-ivory);}
-.service-pic img{border-radius: 15%; height: 100%;}
-.service-text{flex-grow: 1;}
-.service-actions{flex-direction: row;justify-content: left;}
+.services-blocks{
+    display: grid;
+    grid-auto-rows:1fr;
+    row-gap: 10px;
+    grid-template-areas: 
+    "block1"
+    "block2"
+    "block3"
+    "block4";
+}
+
+.services .block1 {grid-area: block1;}
+.services .block2 {grid-area: block2;}
+.services .block3 {grid-area: block3;}
+.services .block4 {grid-area: block4;}
+.service .service-contents{height:80%; background-color: var(--main-ivory);}
+.service .service-actions{height: 20%;}
+.service-pic {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.service-pic img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.service-actions{flex-direction: row;}
 .service a{text-decoration: underline solid;}
 .service-action-button{height:50px;width:50px;color: #fff; background-color: var(--main-extreme-dark);border-radius: 50%;}
 
-.address-schedule, .location, .message-form{background-color: var(--main-ivory); flex:1; align-items: stretch;}
+.contacts-blocks{
+    display: grid;
+    grid-auto-rows:1fr;
+    row-gap: 10px;
+    grid-template-areas: 
+    "block1"
+    "block2"
+    "block3";
+}
+.contacts .block1 {grid-area: block1;background-color: var(--main-ivory);}
+.contacts .block2 {grid-area: block2;background-color: var(--main-ivory);}
+.contacts .block3 {grid-area: block3;background-color: var(--main-ivory);}
+
 .map{flex-grow: 1;} iframe{height: 100%;width: 100%;}
 .address-schedule span{display:inline-block;width: 100%;}
 .schedule th{font-weight: bold;}
 .schedule table, .schedule th, .schedule td {border-collapse: collapse; text-align: center;}
 .schedule tr{line-height: 3rem;}
 .schedule tbody th{text-indent: 10px;}
-.message-form button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;}
-footer{background-color: var(--main-extreme-dark); color: var(--main-gold);}
+.message-form button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;} footer{background-color: var(--main-extreme-dark); color: var(--main-gold);}
 
 footer p{display: block;}
 @media screen and (min-width: 650px){
     .menu, #menu-list{flex-direction: row; }
     #menu-list,  #menu-list{ height: 5rem;}
-    .services{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        " h2 h2 "
-        " s1 s2 "
-        " s3 s4 ";
+    .services-blocks{
+        grid-auto-columns:1fr;
+        column-gap: 10px;
+        grid-template-areas: 
+        "block1 block2"
+        "block3 block4";
     }
-    .services .services-header{grid-area: h2;}
-    .contacts-contents{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas:
-        "adr map"
-        "msg msg";
+    .contacts-blocks{
+        grid-auto-columns:1fr;
+        column-gap: 10px;
+        grid-template-areas: 
+        "block1 block2"
+        "block3 block3";
     }
     .address-schedule{grid-area: adr;}
     .location{grid-area: map;}
@@ -80,16 +113,13 @@ footer p{display: block;}
 @media screen and (min-width: 960px){
     .menu, #menu-list{flex-direction: row; }
     #menu-list,  #menu-list{ height: 5rem;}
-    .services{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-        " h2 h2 h2 h2 "
-        " s1 s2 s3 s4";
-    }
-    .services .services-header{grid-area: h2;}
-    .contacts-contents{display:flex;
-        flex-direction: row;
+    .services-blocks{
+        grid-template-areas: 
+        "block1 block2 block3 block4";
+    }    
+    .contacts-blocks{
+        grid-template-areas: 
+        "block1 block2 block3";
     }
     .footer-inf{ flex-direction: row-reverse; width:100%}
 }
