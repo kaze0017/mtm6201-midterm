@@ -1,0 +1,55 @@
+#Layer_1{fill: var(--main-gold);}
+#Layer_1:hover #w{ 
+animation-name: filling;
+animation-duration: 3s;
+animation-delay: 0.0s;}
+#Layer_1:hover #w{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.05s;
+}
+#Layer_1:hover #h{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.1s;
+}
+#Layer_1:hover #e{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.15s;
+}
+#Layer_1:hover #a{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+}
+#Layer_1:hover #t1{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+}
+#Layer_1:hover #s{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+}
+#Layer_1:hover #c{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.35s;
+}
+#Layer_1:hover #en{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.35s;
+}
+#Layer_1:hover #t{ 
+    animation-name: filling;
+    animation-duration: 1.5s;
+    animation-delay: 0.4s;
+}
+@keyframes filling {
+    0%{fill:var(--main-gold);transform: scale(1);}
+    50%{fill: url(#my-cool-gradient);transform: scale(1.1);}
+    100%{fill:var(--main-gold);transform: scale(1);}
+}

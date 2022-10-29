@@ -11,44 +11,63 @@
     <title>Kazemi MTM6201-Midterm</title>
 </head>
 <body>
+    <!--Adds skiplink for the main content (products)-->
+    <div class="wrapper skiplinks">
+        <ul>
+          <li><a href="#main-content">Skip to main content</a></li>
+        </ul>
+    </div>
+    <!--Header contains navigation, banerm and short info(linke to about us)-->
 <header>
+    <!--Stiky main menu - includes logo and navigation menu-->
     <div class="main-menu">
         <div class="menu wrapper container">
-            <div class="logo"><a href="./index.html"><img src="./images/logo/logo-text.svg" alt="svg format of logo"></a></div>
+            <!--Adds logo as svg - styled by logo.css and setting.css-->
+            <div class="logo"><a href="./index.html"> <object id="logo-svg" data="./images/logo/logo-text.svg"> </object></a></div>
             <div class="navigation">
                 <nav>
                     <ul id="menu-list" class="container">
-                        <li><a id="a-link" href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="./contacts.html">Contact</a></li>
-                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/aboutus.html">About</a></li>
+                        <li><a href="./pages/contacts.html">Contact</a></li>
+                        <li><a href="./pages/services.html">Services</a></li>
                         <li><a href="#">Login</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </div>
-    <div class="wrapper container">
+    <div class="hero wrapper container">
         <div class="banner-image"><img src="./images/banner.jpg" alt="baking bread as banner images" class="banner"></div>
         <div class="about-brief container">
             <h2>About us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptate. Et saepe commodi eum totam alias, atque possimus, molestiae perspiciatis ab fuga, aliquid aperiam dolor minus iure. Ut, delectus beatae?</p>
-            <div class="banner-button"><a href="./aboutus.html"><button>Read More</button></a></div>
+            <div class="banner-button"><a href="./pages/aboutus.html"><button class="about-hero-button">Read More</button></a></div>
         </div>
     </div>
 </header>
-<main class="wrapper">
+
+<!--The main article includes two main divs: services(products and contacts)-->
+<main id="main-content" class="wrapper">
+    <!-- Services contains two main section :title and services block - -->
     <div class="services container">
         <div class="services-title"><h2>Our Products</h2></div>
+        <!-- Services block contains four main servives(products)-->
         <div class="services-blocks">
+            <!-- first service : includes "service-contents" section(img + title + text) and "service-actions" buttons section-->
+            <!-- Class block1 for parent grid-area - container for inner display-flex -->
             <div class="service block1 container">
                 <div class="service-contents container"> 
-                    <div class="service-pic img-mask"><img class="masked-img" src="./images/services/service-breads.jpg" alt="picture of french Breads">
+                    <div class="service-pic img-mask">
+                        <img class="masked-img face-1" src="./images/services/breads/bread-1.jpg" alt="picture of french Breads">
+                        <img class="masked-img face-2" src="./images/services/breads/bread-2.jpg" alt="picture of french Breads">
+                        <img class="masked-img face-3" src="./images/services/breads/bread-3.jpg" alt="picture of french Breads">
+                        <img class="masked-img face-4" src="./images/services/breads/bread-4.jpg" alt="picture of french Breads">
                     </div>
                     <div class="service-text">
                         <h3>Breads</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus fugiat molestiae, dolorem deserunt corrupti a?</p></div>
-                    <div class="service-info"><a>More</a></div>
+                        <p>Variety of backed </br>Daily backed</p></div>
+                    <div class="service-info"><a class="flexcenter">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -56,11 +75,17 @@
                     <button class="service-action-button"><i class="fa-solid fa-pencil"></i></button>
                 </div>
             </div>
+            <!--second Service : Same as first service-->
             <div class="service block2 container">
                 <div class="service-contents container">
-                    <div class="service-pic img-mask"><img class="masked-img" src="./images/services/service-cakes.jpg" alt="picture of a chocolate cake"></div>
-                    <div class="service-text"><h3>Cakes</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus fugiat molestiae, dolorem deserunt corrupti a?</p></div>
-                    <div class="service-info"><a>More</a></div>
+                    <div class="service-pic img-mask">
+                        <img class="masked-img face-1" src="./images/services/cakes/cake-1.jpg" alt="picture of a cake">
+                        <img class="masked-img face-2" src="./images/services/cakes/cake-2.jpg" alt="picture of a cake">
+                        <img class="masked-img face-3" src="./images/services/cakes/cake-3.jpg" alt="picture of a cake">
+                        <img class="masked-img face-4" src="./images/services/cakes/cake-4.jpg" alt="picture of a cake">
+                    </div>
+                    <div class="service-text"><h3>Cakes</h3><p>Variety of backed </br>Daily backed</p></div>
+                    <div class="service-info"><a class="flexcenter">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -68,11 +93,17 @@
                     <button class="service-action-button"><i class="fa-solid fa-pencil"></i></button>
                 </div>
             </div>
-            <div class="service  block3 container">
+            <!--Third Service : Same as first service-->
+            <div class="service block3 container">
                 <div class="service-contents container">
-                    <div class="service-pic img-mask"><img class="masked-img" src="./images/services/service-cookies.jpg" alt="picture of oatmeal cookies"></div>
-                    <div class="service-text"><h3>Cookies</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus fugiat molestiae, dolorem deserunt corrupti a?</p></div>
-                    <div class="service-info"><a>More</a></div>
+                    <div class="service-pic img-mask">
+                        <img class="masked-img face-1" src="./images/services/cookies/cookies-2.jpg" alt="picture of cookies ">
+                        <img class="masked-img face-2" src="./images/services/cookies/cookies-2.jpg" alt="picture of cookies ">
+                        <img class="masked-img face-3" src="./images/services/cookies/cookies-3.jpg" alt="picture of cookies ">
+                        <img class="masked-img face-4" src="./images/services/cookies/cookies-4.jpg" alt="picture of cookies">
+                    </div>
+                    <div class="service-text"><h3>Cookies</h3><p>Variety of backed </br>Daily backed</p></div>
+                    <div class="service-info"><a class="flexcenter">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -80,11 +111,17 @@
                     <button class="service-action-button"><i class="fa-solid fa-pencil"></i></button>
                 </div>
             </div>
+            <!--Forth Service : Same as first service-->
             <div class="service block4 container">
                 <div class="service-contents container">
-                    <div class="service-pic img-mask"><img class="masked-img" src="./images/services/service-pastas.jpg" alt="picture of homemade pasta"></div>
-                    <div class="service-text"><h3>Pastas</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus fugiat molestiae, dolorem deserunt corrupti a?</p></div>
-                    <div class="service-info"><a>More</a></div>
+                    <div class="service-pic img-mask">
+                        <img class="masked-img face-1" src="./images/services/pastas/pasta-1.jpg" alt="picture of pasta ">
+                        <img class="masked-img face-2" src="./images/services/pastas/pasta-2.jpg" alt="picture of pasta ">
+                        <img class="masked-img face-3" src="./images/services/pastas/pasta-3.jpg" alt="picture of pasta ">
+                        <img class="masked-img face-4" src="./images/services/pastas/pasta-4.jpg" alt="picture of pasta ">
+                    </div>
+                    <div class="service-text"><h3>Pastas</h3><p>Variety of backed </br>Daily backed</p></div>
+                    <div class="service-info"><a class="flexcenter">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
