@@ -112,9 +112,9 @@ body{background-color: var(--main-bg-color);}
 
 footer p{display: block;}
 
-/**** first breaking point @ 760px****/
+/**** first breaking point @ 578px****/
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 578px){
     /**changes menu from column to row**/
     .menu, #menu-list{flex-direction: row; }
     #menu-list{ height: 5rem; text-decoration: none;}
@@ -165,10 +165,14 @@ footer p{display: block;}
     
     .footer-inf{ flex-direction: row-reverse; width:100%}
 }
-@media screen and (min-width: 960px){
+
+@media screen and (min-width: 1008px){
     .menu, #menu-list{flex-direction: row; }
    #menu-list{ height: 5rem;}
-
+    .services-blocks{
+        grid-template-areas: 
+        "block1 block2 block3 block4";
+    }    
     .contacts-blocks{
         grid-template-areas: 
         "block1 block2 block3";
@@ -181,7 +185,12 @@ footer p{display: block;}
         grid-template-areas: 
         "block1 block2 block3 block4";
     }    
-
+    .contacts-blocks{
+        grid-template-areas: 
+        "block1 block2 block3";
+    }
+    .footer-inf{ flex-direction: row-reverse; width:100%}
+}
 @keyframes rotatecard-1{
     0%{transform:rotateY(0deg);}
     5%{transform:rotateY(180deg);}

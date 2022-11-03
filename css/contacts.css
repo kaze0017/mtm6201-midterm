@@ -1,5 +1,5 @@
 .co-hero-img{
-    background-image:url('../images/contacts/co-hero.jpg');
+    background-image:url('../images/contacts/co-hero-620.jpg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,6 +37,7 @@
     .i-what{grid-area: block4;}
     .social-media i{font-size: 4rem;}
     @media screen and (min-width:620px) {
+        .co-hero-img{background-image:url('../images/contacts/co-hero-960.jpg');}
         .co-contacts{
             column-gap: 10px;
             grid-auto-columns:1fr;
@@ -46,8 +47,16 @@
         }
     }
     @media screen and (min-width:960px) {
+        .co-hero-img{background-image:url('../images/contacts/co-hero-1280.jpg');}
+
         .co-contacts{
             grid-template-areas: 
             "block1 block2 block3 block4";
         }
     }
+    @media screen and (min-width:1028px) {.co-hero-img{background-image:url('../images/contacts/co-hero-1920.jpg');}}
+    
+    @media screen and (min-width:1920px) {.co-hero-img{background-image:url('../images/contacts/co-hero.jpg');}}
+    
+
+
