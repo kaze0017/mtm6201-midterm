@@ -43,11 +43,11 @@
     <div class="hero wrapper container">
         <!-- Baner image is responsive for three range of screen width:  S < 480px ; 481> S >960px  ; S > 961.-->
         <div class="banner-image">
-            <picture>
+            <picture class="img-mask box-shadow">
                 <source media="(max-width:480px)" srcset="./images/banner/banner-480.jpg 1x, ./images/banner/banner-960.jpg 2x, ./images/banner/banner-1440.jpg 3x">
                 <source media="(max-width:960px)" srcset="./images/banner/banner-960.jpg 1x, ./images/banner/banner-1920.jpg 2x, ./images/banner/banner-2880.jpg 3x">
                 <source media="(min-width:961px)" srcset="./images/banner/banner-1280.jpg 1x, ./images/banner/banner-2560.jpg 2x, ./images/banner/banner-3840.jpg 3x">
-                <img src="./images/banner/banner.jpg" alt="baking bread as banner images" class="banner">
+                <img src="./images/banner/banner.jpg" alt="baking bread as banner images" class="banner masked-img">
             </picture>
         </div>
         <!-- a brief overview of "about section" ; small screen: under banner image ; wide sereen : over banner image -->
@@ -55,7 +55,7 @@
             <h2>About us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptate. Et saepe commodi eum totam alias, atque possimus, molestiae perspiciatis ab fuga, aliquid aperiam dolor minus iure. Ut, delectus beatae?</p>
             <!-- the button is linked to aboutus page-->
-            <div class="banner-button"><a href="./pages/aboutus.html"><button class="about-hero-button">Read More</button></a></div>
+            <div class="banner-button"><a class="action-button" href="./pages/aboutus.html">Read More</a></div>
         </div>
     </div>
 </header>
@@ -69,7 +69,7 @@
         <div class="services-blocks">
             <!-- first service : includes "service-contents" section(img + title + text) and "service-actions" buttons section-->
             <!-- Class block1 for parent grid-area - container for inner display-flex -->
-            <div class="service block1 container">
+            <div class="service block1 container box-shadow">
                 <div class="service-contents container"> 
                     <!--Each image has 3 different resolution for 1x, 2x, and 3x displays-->
                     <div class="service-pic img-mask">
@@ -80,8 +80,8 @@
                     </div>
                     <div class="service-text">
                         <h3>Breads</h3>
-                        <p>Variety of backed </br>Daily backed</p></div>
-                    <div class="service-info"><a class="flexcenter">More</a></div>
+                        <p>Variety of Breads <br>Daily Fresh Backed</p></div>
+                    <div class="service-info"><a class="flexcenter" href="./pages/services.html#breads">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -91,7 +91,7 @@
             </div>
 
             <!--second Service : Same as first service-->
-            <div class="service block2 container">
+            <div class="service block2 container box-shadow">
                 <div class="service-contents container">
                     <div class="service-pic img-mask">
                         <img  class="masked-img face-1" src="./images/services/cakes/cake-1.jpg" srcset="./images/services/cakes/cake-1-280.jpg 1x, ./images/services/cakes/cake-1-560.jpg 2x, ./images/services/cakes/cake-1-840.jpg 3x" alt="picture of french a cake">
@@ -99,8 +99,8 @@
                         <img  class="masked-img face-3" src="./images/services/cakes/cake-3.jpg" srcset="./images/services/cakes/cake-3-280.jpg 1x, ./images/services/cakes/cake-3-560.jpg 2x, ./images/services/cakes/cake-3-840.jpg 3x" alt="picture of french a cake">
                         <img  class="masked-img face-4" src="./images/services/cakes/cake-4.jpg" srcset="./images/services/cakes/cake-4-280.jpg 1x, ./images/services/cakes/cake-4-560.jpg 2x, ./images/services/cakes/cake-4-840.jpg 3x" alt="picture of french a cake">
                     </div>
-                    <div class="service-text"><h3>Cakes</h3><p>Variety of backed </br>Daily backed</p></div>
-                    <div class="service-info"><a class="flexcenter">More</a></div>
+                    <div class="service-text"><h3>Cakes</h3><p>Variety of Cakes <br>Daily Fresh Backed</p></div>
+                    <div class="service-info"><a class="flexcenter" href="./pages/services.html#cakes">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -110,7 +110,7 @@
             </div>
 
             <!--Third Service : Same as first service-->
-            <div class="service block3 container">
+            <div class="service block3 container box-shadow">
                 <div class="service-contents container">
 
                     <div class="service-pic img-mask">
@@ -119,8 +119,8 @@
                         <img  class="masked-img face-3" src="./images/services/cookies/cookies-3.jpg" srcset="./images/services/cookies/cookies-3-280.jpg 1x, ./images/services/cookies/cookies-3-560.jpg 2x, ./images/services/cookies/cookies-3-840.jpg 3x" alt="picture of cookies">
                         <img  class="masked-img face-4" src="./images/services/cookies/cookies-4.jpg" srcset="./images/services/cookies/cookies-4-280.jpg 1x, ./images/services/cookies/cookies-4-560.jpg 2x, ./images/services/cookies/cookies-4-840.jpg 3x" alt="picture of cookies">
                     </div>
-                    <div class="service-text"><h3>Cookies</h3><p>Variety of backed </br>Daily backed</p></div>
-                    <div class="service-info"><a class="flexcenter">More</a></div>
+                    <div class="service-text"><h3>Cookies</h3><p>Variety of Cookies <br>Daily Fresh Backed</p></div>
+                    <div class="service-info"><a class="flexcenter" href="./pages/services.html#cookies">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -130,7 +130,7 @@
             </div>
 
             <!--Forth Service : Same as first service-->
-            <div class="service block4 container">
+            <div class="service block4 container box-shadow">
                 <div class="service-contents container">
                     <div class="service-pic img-mask">
                         <img  class="masked-img face-1" src="./images/services/pastas/pasta-1.jpg" srcset="./images/services/pastas/pasta-1-280.jpg 1x, ./images/services/pastas/pasta-1-560.jpg 2x, ./images/services/pastas/pasta-1-840.jpg 3x" alt="picture of pasta">
@@ -138,8 +138,8 @@
                         <img  class="masked-img face-3" src="./images/services/pastas/pasta-3.jpg" srcset="./images/services/pastas/pasta-3-280.jpg 1x, ./images/services/pastas/pasta-3-560.jpg 2x, ./images/services/pastas/pasta-3-840.jpg 3x" alt="picture of pasta">
                         <img  class="masked-img face-4" src="./images/services/pastas/pasta-4.jpg" srcset="./images/services/pastas/pasta-4-280.jpg 1x, ./images/services/pastas/pasta-4-560.jpg 2x, ./images/services/pastas/pasta-4-840.jpg 3x" alt="picture of pasta">
                     </div>
-                    <div class="service-text"><h3>Pastas</h3><p>Variety of backed </br>Daily backed</p></div>
-                    <div class="service-info"><a class="flexcenter">More</a></div>
+                    <div class="service-text"><h3>Pastas</h3><p>Variety of Pastas <br>Daily Fresh Backed</p></div>
+                    <div class="service-info"><a class="flexcenter" href="./pages/services.html#pastas">More</a></div>
                 </div>
                 <div class="service-actions container">
                     <button class="service-action-button"><i class="fa-solid fa-basket-shopping"></i></button>
@@ -154,7 +154,7 @@
         <div class="contacts-title"><h2>contacts</h2></div>
         <div class="contacts-blocks container">
             <!-- a flex-column container for address and schedule-->
-            <div class="address-schedule block1">
+            <div class="address-schedule block1 box-shadow">
                 <div class="postal-address container">
                     <h3>Address</h3>
                     <p itemscope itemtype="https://schema.org/PostalAddress">
@@ -176,25 +176,25 @@
                         <tbody>
                             <tr>
                                 <th scope="row">Monday-Friday</th>
-                                <td>:6 AM - 8 PM</td>
+                                <td>6 AM - 8 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row">Saturday-Sunday</th>
-                                <td>:8 am - 2 pm</td>
+                                <td>8 am - 2 pm</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <!-- a flex-column container for google map-->
-            <div class="location container block2">
+            <div class="location container block2 box-shadow">
                 <div><h3>Location</h3></div>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447418793047!2d-75.7594214726911!3d45.34992771225015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1666557819024!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <!-- a flex-column container for message form-->
-            <div class="message-form container block3">
+            <div class="message-form container block3 box-shadow">
                 <div><h3>Send us a message</h3></div>
                 <div>
                     <div><label for="fullname">Full Name</label></div>

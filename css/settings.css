@@ -68,6 +68,8 @@ input,textarea{width: 100%}
     justify-content: space-between;
 }
 .flexcenter{display:flex;align-items: center; justify-content: center;}
+
+/*centering and fitting image to an outer div */
 .img-mask {
     position: relative;
     display: flex;
@@ -81,4 +83,9 @@ img{width:100%}
     min-width: 100%;
     min-height: 100%;
 }
+/**********************************************/
 
+/* adding dark shadow to the elements*/
+.box-shadow{
+    box-shadow: 10px 10px 15px #111;
+}

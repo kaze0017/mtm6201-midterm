@@ -6,6 +6,7 @@
     height: 100vh;}
     .co-hero-title{background-color: rgba(80,80,80,0.5);color: white;height: 80%;width: 90%;padding: 10px;}
     .co-hero-title h1{text-align: center;}
+    /*contacts : mobile version 4*1 */
     .co-contacts{
         padding: 20px 20px;
         display: grid;
@@ -21,6 +22,7 @@
     .address-schedule{grid-area: block1; background-color: var(--main-ivory);}
     .location{grid-area: block2; background-color: var(--main-ivory)}
     .message-form{grid-area: block3; background-color: var(--main-ivory)}
+    /* social media links 4*4 */
     .social-media{
         background-color: var(--main-ivory);
         grid-area: block4;
@@ -36,8 +38,11 @@
     .i-face{grid-area: block3;}
     .i-what{grid-area: block4;}
     .social-media i{font-size: 4rem;}
+
+    /* First breakpoint at 620px */
     @media screen and (min-width:620px) {
         .co-hero-img{background-image:url('../images/contacts/co-hero-960.jpg');}
+        /* changing contacts from 4*1 to 2*2 */
         .co-contacts{
             column-gap: 10px;
             grid-auto-columns:1fr;
@@ -46,16 +51,19 @@
             "block3 block4";
         }
     }
+    /* Second breakpoint at 960px */
     @media screen and (min-width:960px) {
         .co-hero-img{background-image:url('../images/contacts/co-hero-1280.jpg');}
-
+        /* changing contacts from 2*2 to 1*4 */
         .co-contacts{
             grid-template-areas: 
             "block1 block2 block3 block4";
         }
     }
+
+    /* Third breakpoint at 1028px */
     @media screen and (min-width:1028px) {.co-hero-img{background-image:url('../images/contacts/co-hero-1920.jpg');}}
-    
+    /* Forth breakpoint at 1920px */
     @media screen and (min-width:1920px) {.co-hero-img{background-image:url('../images/contacts/co-hero.jpg');}}
     
 

@@ -1,7 +1,10 @@
+.about-hero{background-color: var(--main-ivory);}
+/*fitting content to space*/
 .about-hero > div {flex:1;}
 .about-hero-text-buttons > div {flex: 1;}
+/*adding space between two buttons*/
 .about-hero-buttons{justify-content: space-evenly;}
-.about-hero-button{border-radius: 50px; width: 8rem; background-color:var(--main-extreme-dark) ; color: #fff;}
+
 @media screen and (min-width: 620px){
 .about-hero{flex-direction: row;align-items: stretch;}
 }

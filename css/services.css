@@ -1,88 +1,74 @@
-
-    .sp-services{display:grid;
-        grid-auto-rows:1fr;
-        grid-template-areas: 
+/* Services : mobile version 4*1 */
+.sp-services{display:grid;
+    grid-auto-rows:1fr;
+    grid-template-areas: 
         "block1"
         "block2"
         "block3"
         "block4";
-        row-gap: 20px;
-        margin: 20px 0;
+    row-gap: 20px;
+    margin: 20px 0;
 }
 .service-1{grid-area: block1;}
 .service-2{grid-area: block2;}
 .service-3 {grid-area: block3;}
 .service-4{grid-area: block4;;}
-
-
 .sp-service{
     display:flex;flex-direction: column;
     background-color: var(--main-ivory);
 }
+/* image of service : Four tiles are placed in a 2*2 graid */
+.sp-service-img{
+    max-width: 400px;
+    display: grid;
+    grid-auto-columns:1fr;
+    grid-auto-rows:1fr;
+    grid-template-areas: 
+        "block-1 block-2"
+        "block-3 block-4";
+}
+/* fitting and fixing each tile in proper corner of the block */
+.sp-service-img .block-1{
+    max-width: 200px;
+    height: 300px;
+    grid-area: block-1;
+    display: flex;
+    align-items:flex-end;
+    justify-content:right;
+}
+.sp-service-img .block-2{
+    max-width: 200px;
+    height: 300px;
+    grid-area: block-2;
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-start;
+    position:relative;
+}
+.sp-service-img .block-3{
+    max-width: 200px;
+    height: 300px;
+    grid-area: block-3;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-end;
+    position:relative;
+}
+.sp-service-img .block-4{
+    max-width: 200px;
+    height: 300px;
+    grid-area: block-4;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+/*************************************/
+.sp-service-img img{position: absolute;flex-shrink: 1;}
 
-
-    .sp-service-img{
-
-        max-width: 400px;
-        display: grid;
-        grid-auto-columns:1fr;
-        grid-auto-rows:1fr;
-        grid-template-areas: 
-            "block-1 block-2"
-            "block-3 block-4";
-        align-content: space-between;
-        }
-    .sp-service-img .block-1{
-        max-width: 200px;
-        height: 300px;
-        grid-area: block-1;
-        display: flex;
-        align-items:flex-end;
-        justify-content:right;
-
-        
-    }
-    .sp-service-img .block-2{
-        max-width: 200px;
-        height: 300px;
-        grid-area: block-2;
-
-        display: flex;
-        align-items:flex-end;
-        justify-content:flex-start;
-
-        position:relative;
-    }
-    .sp-service-img .block-3{
-        max-width: 200px;
-        height: 300px;
-        grid-area: block-3;
-        display: flex;
-        align-items:flex-start;
-        justify-content:flex-end;
-        position:relative;
-        
-    }
-    .sp-service-img .block-4{
-        max-width: 200px;
-        height: 300px;
-        grid-area: block-4;
-        display: flex;
-        align-items:flex-start;
-        justify-content:flex-start;
-        }
-    
-        .sp-service-img img{position: absolute;flex-shrink: 1;}
-
-
-
-/* .block-1 img:nth-child(1){
-    position: absolute;
-    bottom: 0;
-    right: 0;
-} */
 img{backface-visibility: hidden; display: block;}
-.sp-service-img  .block-1 .seq-1{animation: rotate-block1-sq1 10s linear infinite; display: block;}
+
+/* assigning animations to the tiles */
+.sp-service-img  .block-1 .seq-1{animation: rotate-block1-sq1 10s linear infinite; }
 .sp-service-img  .block-1 .seq-2{animation: rotate-block1-sq2 10s linear infinite; }
 .sp-service-img  .block-1 .seq-3{animation: rotate-block1-sq3 10s linear infinite; }
 .sp-service-img  .block-1 .seq-4{animation: rotate-block1-sq4 10s linear infinite; }
@@ -102,7 +88,7 @@ img{backface-visibility: hidden; display: block;}
 .sp-service-img  .block-4 .seq-3{animation: rotate-block1-sq3 10s linear 0.5s infinite; }
 .sp-service-img  .block-4 .seq-4{animation: rotate-block1-sq4 10s linear 0.5s infinite; }
 
-
+/* One breakpoint at 720px*/
 @media screen and (min-width:720px){
     .sp-services{
         display: grid;
@@ -118,6 +104,8 @@ img{backface-visibility: hidden; display: block;}
 
     .sp-service-txt{grid-area: tx; justify-content: space-evenly;}
 }
+
+/*Animation for tiles*/
 @keyframes rotate-block1-sq1 {
     0%{transform: rotateX(0deg);}
     20%{transform: rotateX(0deg);}
