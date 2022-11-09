@@ -75,6 +75,10 @@ body{background-color: var(--main-bg-color);}
 /*adding animation to each image*/
 /** hiden when flipped**/
 .service-pic img{backface-visibility: hidden;}
+.service .face-1{animation: rotatecard-1 4s ease 0s ;}
+.service .face-2{animation: rotatecard-2 4s ease 0s ;}
+.service .face-3{animation: rotatecard-3 4s ease 0s ;}
+.service .face-4{animation: rotatecard-4 4s ease 0s ;}
 .service:hover .face-1{animation: rotatecard-1 10s linear 0s infinite;}
 .service:hover .face-2{animation: rotatecard-2 10s linear 0s infinite;}
 .service:hover .face-3{animation: rotatecard-3 10s linear 0s infinite;}

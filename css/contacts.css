@@ -33,10 +33,16 @@
         "block1 block2"
         "block3 block4";
     }
-    .i-link{grid-area: block1;}
-    .i-inst{grid-area: block2;}
-    .i-face{grid-area: block3;}
-    .i-what{grid-area: block4;}
+    .i-link{grid-area: block1; transition: all 1s ease; animation: socialLinks-init 1.5s 0s ;}
+    .i-inst{grid-area: block2; transition: all 1s ease; animation: socialLinks-init 1.5s 0.5s ;}
+    .i-face{grid-area: block3; transition: all 1s ease; animation: socialLinks-init 1.5s 1s ;}
+    .i-what{grid-area: block4; transition: all 1s ease; animation: socialLinks-init 1.5s 1.5s ;}
+ 
+    .i-link:hover{transform: scale(1.5); color: #86888a;}
+    .i-inst:hover{transform: scale(1.5); color: purple;}
+    .i-face:hover{transform: scale(1.5); color: #3b5998;}
+    .i-what:hover{transform: scale(1.5); color: #25d366;}
+
     .social-media i{font-size: 4rem;}
 
     /* First breakpoint at 620px */
@@ -65,6 +71,13 @@
     @media screen and (min-width:1028px) {.co-hero-img{background-image:url('../images/contacts/co-hero-1920.jpg');}}
     /* Forth breakpoint at 1920px */
     @media screen and (min-width:1920px) {.co-hero-img{background-image:url('../images/contacts/co-hero.jpg');}}
+
+    @keyframes socialLinks-init {
+        0%{color:var(--main-extreme-dark); scale: 1}
+        50%{color:var(--main-gold) ; scale: 1.5;}
+        100%{color:var(--main-extreme-dark); scale: 1}
+        
+    }
     
 
 
