@@ -11,8 +11,8 @@
 }
 .service-1{grid-area: block1;}
 .service-2{grid-area: block2;}
-.service-3 {grid-area: block3;}
-.service-4{grid-area: block4;;}
+.service-3{grid-area: block3;}
+.service-4{grid-area: block4;}
 .sp-service{
     display:flex;flex-direction: column;
     background-color: var(--main-ivory);
