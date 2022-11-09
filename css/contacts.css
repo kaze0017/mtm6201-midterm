@@ -27,8 +27,8 @@
         background-color: var(--main-ivory);
         grid-area: block4;
         display: grid;
-        grid-template-columns: (2,fr);
-        grid-template-rows: (2,fr);
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
         grid-template-areas: 
         "block1 block2"
         "block3 block4";
@@ -73,9 +73,9 @@
     @media screen and (min-width:1920px) {.co-hero-img{background-image:url('../images/contacts/co-hero.jpg');}}
 
     @keyframes socialLinks-init {
-        0%{color:var(--main-extreme-dark); scale: 1}
-        50%{color:var(--main-gold) ; scale: 1.5;}
-        100%{color:var(--main-extreme-dark); scale: 1}
+        0%{color:var(--main-extreme-dark); transform:scale(1) }
+        50%{color:var(--main-gold) ; transform:scale(1.5) }
+        100%{color:var(--main-extreme-dark); transform:scale(1)}
         
     }
     
