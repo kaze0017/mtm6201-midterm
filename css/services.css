@@ -96,7 +96,7 @@ img{backface-visibility: hidden; display: block;}
     }
     .sp-service{ 
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-auto-columns: 1fr;
         grid-template-areas: 
         "im tx tx";
     }
@@ -136,6 +136,3 @@ img{backface-visibility: hidden; display: block;}
     95%{transform: rotateX(0deg);}
     100%{transform: rotateX(180deg);} 
 }
-
-
-
